@@ -7,7 +7,7 @@ class App < Sinatra::Base
   end
 
   post '/translated' do
-    @translation = PigLatinizer. 
+    @translation = PigLatinizer.new.piglatinize()
     erb :translated
   end
 
